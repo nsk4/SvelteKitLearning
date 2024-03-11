@@ -10,7 +10,9 @@
 			"extensions": [
 				"svelte.svelte-vscode",
 				"ms-azuretools.vscode-docker",
-				"antfu.vite"
+				"antfu.vite",
+				"esbenp.prettier-vscode",
+				"dbaeumer.vscode-eslint"
 			]
 		}
 	}
