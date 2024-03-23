@@ -1,8 +1,6 @@
 <script lang="ts">
-    import { goto, invalidateAll } from '$app/navigation';
+    import { invalidateAll } from '$app/navigation';
     import type { Snapshot } from '../$types';
-
-    let a: any;
 
     let username = '';
     let password = '';
