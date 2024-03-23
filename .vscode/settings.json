@@ -1,4 +1,7 @@
 {
     "editor.formatOnSave": true,
-    "editor.tabCompletion": "onlySnippets"
+    "editor.tabCompletion": "onlySnippets",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    }
 }

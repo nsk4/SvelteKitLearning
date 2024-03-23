@@ -12,7 +12,9 @@
 				"ms-azuretools.vscode-docker",
 				"antfu.vite",
 				"esbenp.prettier-vscode",
-				"dbaeumer.vscode-eslint"
+				"dbaeumer.vscode-eslint",
+				"fivethree.vscode-svelte-snippets",
+				"RapidAPI.vscode-rapidapi-client"
 			]
 		}
 	}
