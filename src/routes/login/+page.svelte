@@ -24,7 +24,6 @@
             body: JSON.stringify({ username, password })
         });
         const responseJSON = await response.json();
-
         if (response.ok) {
             // invalidateAll will trigger redirect we have in +page.ts so manual goto is not needed.
             //goto('/', {

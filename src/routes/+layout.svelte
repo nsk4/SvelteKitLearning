@@ -6,6 +6,11 @@
 </script>
 
 <svelte:head>
+    <style>
+        * {
+            background-color: #c5c6d0;
+        }
+    </style>
     <title>Website Name{$page.data.title ? ` - ${$page.data.title}` : ''}</title>
     {#if $page.data.description}
         <meta name="description" content={$page.data.description} />
