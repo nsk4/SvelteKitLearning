@@ -13,11 +13,15 @@
 >
 
 {#if products && products.length > 0}
-    <ul>
+    <ul data-sveltekit-preload-data="hover">
         {#each products as product}
             <li>
                 <img src={product.thumbnail} alt={product.title} />
-                <h3><a href="/product/{product.id}">{product.title}</a></h3>
+                <h3>
+                    <a href="/product/{product.id}">
+                        {product.title}
+                    </a>
+                </h3>
                 <p>{product.description}</p>
             </li>
         {/each}
