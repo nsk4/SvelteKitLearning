@@ -15,3 +15,6 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
         comments
     };
 };
+
+// Setting prerender to auto will prerender crawled pages and for the rest will execute normal fetch logic.
+export const prerender = "auto";

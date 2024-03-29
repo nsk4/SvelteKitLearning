@@ -11,8 +11,6 @@ export const load: PageServerLoad = async ({ fetch, depends, locals }) => {
     //console.log('$env/dynamic/public at +page.server.ts', publicEnv.PUBLIC_KEY);
     //console.log('$env/static/public at +page.server.ts', PUBLIC_KEY);
 
-
-
     console.log("products/locals", locals);
 
     const response = await fetch("/api/products");
@@ -26,3 +24,6 @@ export const load: PageServerLoad = async ({ fetch, depends, locals }) => {
     const errorJSON = await response.json();
     throw error(response.status, errorJSON.message);
 };
+
+// Endpoint will run once during build time and the results will be baked into the generated file. If products changes after build this will not be reflected in the generated file.
+export const prerender = true;

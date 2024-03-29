@@ -1,8 +1,12 @@
 <script lang="ts">
+    import { browser, building, dev, version } from '$app/environment';
     import { invalidateAll } from '$app/navigation';
     import { page } from '$app/stores';
+    import type { LayoutData } from './$types';
 
-    export let data;
+    $: console.log({ browser, building, dev, version });
+
+    export let data: LayoutData;
 </script>
 
 <svelte:head>
