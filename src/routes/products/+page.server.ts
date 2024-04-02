@@ -26,4 +26,5 @@ export const load: PageServerLoad = async ({ fetch, depends, locals }) => {
 };
 
 // Endpoint will run once during build time and the results will be baked into the generated file. If products changes after build this will not be reflected in the generated file.
-export const prerender = true;
+// If page is set to be prerendered then it should not request from API endpoints that contain endpoints other than GET. In our example the /api/products is requesting GET endpoint from this file. Since this file also contains POST the prerendering will throw an error.
+//export const prerender = true;
