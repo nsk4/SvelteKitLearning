@@ -1,7 +1,8 @@
 import { error, json, type RequestHandler } from "@sveltejs/kit";
+import { API_URL } from "$env/static/private";
 
 export const GET: RequestHandler = async ({ fetch }) => {
-    const response = await fetch('https://dummyjson.com/products?limit=6');
+    const response = await fetch(`${API_URL}/products?limit=6`);
     if (!response.ok) {
         throw error(response.status, response.statusText);
     }

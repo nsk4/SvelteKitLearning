@@ -1,4 +1,8 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-auto'; // Adapter will be automatically selected. For Vercel or Netlify you can use either this or a dedicated adapter, however adapter options cannot be specified.
+//import adapter from '@sveltejs/adapter-node'; // For deployment on node supported platforms like heroku.
+//import adapter from '@sveltejs/adapter-vercel'; // For deployment on Vercel.
+//import adapter from '@sveltejs/adapter-netlify'; // For deployment on Netlify.
+
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
